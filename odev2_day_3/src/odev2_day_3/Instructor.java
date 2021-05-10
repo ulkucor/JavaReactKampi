@@ -1,4 +1,4 @@
-package odev2_day_3_v2;
+package odev2_day_3;
 
 public class Instructor extends User{
 
