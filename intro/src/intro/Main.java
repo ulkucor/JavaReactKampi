@@ -1,0 +1,81 @@
+package intro;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//camelCase
+		//Don't repeat yourself
+		String internetSubeButonu ="Ýnternet Þubesi"; 
+		double dolarDun = 8.20;
+		double dolarBugun = 8.20;
+		int vade = 36;
+		boolean dustuMu = false; //true ya da false deðeri alýr.
+		
+		System.out.println(internetSubeButonu);
+		
+		if(dolarBugun<dolarDun) {
+			System.out.println("Dolar düþtü resmi");
+		}else if(dolarBugun>dolarDun) {
+			System.out.println("Dolar yükseldi resmi");
+		}
+		else {
+			System.out.println("Dolar eþittir resmi");
+
+		}
+		
+		String kredi1 ="Hýzlý Kredi";
+		String kredi2 ="Mutlu emekli kredisi";
+		String kredi3 ="Konut Kredi";
+		String kredi4 ="Çiftçi Kredisi";
+		String kredi5 ="Msb Kredisi";
+		String kredi6 ="Meb kredisi";
+		
+		
+		System.out.println(kredi1);
+		System.out.println(kredi2);
+		System.out.println(kredi3);
+		System.out.println(kredi4);
+		System.out.println(kredi5);
+		System.out.println(kredi6);
+		
+		String[] krediler = 
+			{
+				"Hýzlý Kredi",
+				"Mutlu emekli kredisi","Konut Kredi",
+				"Çiftçi Kredisi",
+				"Msb Kredisi",
+				"Meb kredisi"
+			};
+		
+		//foreach
+		for(String kredi :krediler) {
+			System.out.println(kredi);
+		}
+
+		//standart güdümlü for, sayaç
+		for(int i = 0; i<krediler.length;i++) {
+			System.out.println(krediler[i]);
+		}
+
+		int sayi1 = 10;
+		int sayi2 = 20;
+		sayi1 = sayi2;
+		sayi2 = 100;
+		System.out.println(sayi1);
+		
+		int[] sayilar1 = {1,2,3,4,5};
+		int[] sayilar2 = {10,20,30,40,50}; //garbage colector sayilar1 in adresini uçurur o yüzden sayilar2 ne ise cevap o olur.
+		sayilar1 = sayilar2;
+		sayilar2[0] = 100;
+		System.out.println(sayilar1[0]);
+		
+		String sehir1 = "Ankara";
+		String sehir2 = "Ýstanbul"; //stringler istisna dizilerdir.
+		sehir1 = sehir2;
+		sehir2 = "Ýzmir";
+		System.out.println(sehir1);
+		
+	}
+
+}
